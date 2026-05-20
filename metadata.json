@@ -1,0 +1,6 @@
+{
+  "name": "Omni Video Gen Studio",
+  "description": "An interactive workspace, codebase tree browser, and test runner sandbox for the omni-video-gen Python library, integrating a companion No-Code storyboard creator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
